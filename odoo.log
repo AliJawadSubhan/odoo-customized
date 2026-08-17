@@ -2046,3 +2046,675 @@ File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 
 2026-08-17 13:36:10,183 10964 INFO demo odoo.addons.base.models.res_device: User 2 inserts device log (k5bJZJ-xywP8nUfdNkByXADpkQFxX1f7y_zo_WQuoU) 
 2026-08-17 13:36:12,537 10964 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
 2026-08-17 13:36:12,560 10964 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 14:06:27,254 2208 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 14:06:27,255 2208 INFO ? odoo: Odoo version 19.0 
+2026-08-17 14:06:27,255 2208 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 14:06:27,255 2208 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 14:06:27,255 2208 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 14:06:27,772 2208 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 14:06:35,546 2208 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-08-17 14:06:35,554 2208 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-08-17 14:06:35,592 2208 INFO ? odoo.modules.loading: loading 67 modules... 
+2026-08-17 14:06:36,813 2208 INFO ? odoo.modules.loading: 67 modules loaded in 1.22s, 0 queries (+0 extra) 
+2026-08-17 14:06:37,011 2208 INFO ? odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 14:06:37,015 2208 INFO ? odoo.modules.loading: Modules loaded. 
+2026-08-17 14:06:37,060 2208 INFO ? odoo.registry: Registry loaded in 1.597s 
+2026-08-17 14:06:37,062 2208 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 14:06:37,091 2208 INFO demo odoo.addons.base.models.res_device: User 2 inserts device log (k5bJZJ-xywP8nUfdNkByXADpkQFxX1f7y_zo_WQuoU) 
+2026-08-17 14:06:37,101 2208 INFO demo odoo.addons.base.models.res_device: User 2 inserts device log (k5bJZJ-xywP8nUfdNkByXADpkQFxX1f7y_zo_WQuoU) 
+2026-08-17 14:06:37,126 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:37] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 3 0.016 0.880
+2026-08-17 14:06:37,144 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:37] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.010
+2026-08-17 14:06:37,464 2208 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 14:06:37,919 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:37] "GET /odoo/settings HTTP/1.1" 200 - 100 0.079 2.379
+2026-08-17 14:06:38,295 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:38] "GET /web/assets/37a372a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.003 0.044
+2026-08-17 14:06:38,493 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 14 0.116 0.093
+2026-08-17 14:06:38,578 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:38] "GET /web/webclient/load_menus HTTP/1.1" 200 - 17 0.155 0.170
+2026-08-17 14:06:38,921 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:38] "GET /web/assets/955b6dc/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.006 0.043
+2026-08-17 14:06:41,135 2208 INFO demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/a68562a/web.assets_web.min.js (id:974) 
+2026-08-17 14:06:41,136 2208 INFO demo odoo.addons.base.models.assetsbundle: Deleting attachments [972] (matching /web/assets/_______/web.assets_web.min.js) because it was replaced with /web/assets/a68562a/web.assets_web.min.js 
+2026-08-17 14:06:41,191 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:41] "GET /web/assets/a68562a/web.assets_web.min.js HTTP/1.1" 200 - 16 0.051 3.199
+2026-08-17 14:06:41,891 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:41] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 2 0.002 0.008
+2026-08-17 14:06:41,896 2208 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:41] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 14:06:41,906 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:41] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.002 0.005
+2026-08-17 14:06:42,455 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:42] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.007
+2026-08-17 14:06:42,749 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:06:42] "POST /mail/data HTTP/1.1" 200 - 65 0.046 0.049
+2026-08-17 14:07:27,868 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 14:07:27,906 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.04s) 
+2026-08-17 14:16:28,355 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 14:16:28,381 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.03s) 
+2026-08-17 14:26:28,913 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 14:26:28,975 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.06s) 
+2026-08-17 14:34:13,338 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:13] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.003
+2026-08-17 14:34:13,661 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:13] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.005
+2026-08-17 14:34:49,025 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:49] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 12 0.014 0.022
+2026-08-17 14:34:49,313 2208 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:49] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 14:34:49,314 2208 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:49] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 14:34:50,286 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:50] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 412 0.148 0.827
+2026-08-17 14:34:50,779 2208 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 14:34:50] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 159 0.075 0.096
+2026-08-17 14:35:36,255 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2026-08-17 14:35:36,294 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) fully done (#loop 1; done 0; remaining 0; duration 0.04s) 
+2026-08-17 14:35:36,337 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2026-08-17 14:35:36,410 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) fully done (#loop 1; done 0; remaining 0; duration 0.07s) 
+2026-08-17 14:36:05,097 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (14) starting 
+2026-08-17 14:36:05,646 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (14) fully done (#loop 1; done 0; remaining 0; duration 0.55s) 
+2026-08-17 14:36:05,665 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 14:36:05,692 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.03s) 
+2026-08-17 14:46:16,370 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 14:46:16,423 2208 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.05s) 
+2026-08-17 16:14:06,938 21752 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 16:14:06,939 21752 INFO ? odoo: Odoo version 19.0 
+2026-08-17 16:14:06,939 21752 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 16:14:06,939 21752 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 16:14:06,939 21752 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 16:14:07,761 21752 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 16:15:08,017 21752 INFO demo odoo.modules.loading: loading 1 modules... 
+2026-08-17 16:15:08,025 21752 INFO demo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-08-17 16:15:08,095 21752 INFO demo odoo.modules.loading: loading 67 modules... 
+2026-08-17 16:15:09,381 21752 INFO demo odoo.modules.loading: 67 modules loaded in 1.29s, 0 queries (+7 extra) 
+2026-08-17 16:15:09,593 21752 INFO demo odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 16:15:09,597 21752 INFO demo odoo.modules.loading: Modules loaded. 
+2026-08-17 16:15:09,644 21752 INFO demo odoo.registry: Registry loaded in 1.689s 
+2026-08-17 16:15:09,679 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2026-08-17 16:15:09,681 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 16:15:09,840 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) fully done (#loop 1; done 0; remaining 0; duration 0.16s) 
+2026-08-17 16:15:09,844 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.16s) 
+2026-08-17 16:15:09,857 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2026-08-17 16:15:13,976 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) fully done (#loop 1; done 0; remaining 0; duration 4.12s) 
+2026-08-17 16:15:32,358 21752 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 16:15:32,393 21752 INFO demo odoo.addons.base.models.res_device: User 2 inserts device log (k5bJZJ-xywP8nUfdNkByXADpkQFxX1f7y_zo_WQuoU) 
+2026-08-17 16:15:32,408 21752 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 16:15:32] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 8 0.010 0.046
+2026-08-17 16:15:32,728 21752 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 16:15:32] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.003 0.006
+2026-08-17 16:15:32,776 21752 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 16:16:09,908 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 16:16:09,927 21752 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 16:18:17,288 22708 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 16:18:17,289 22708 INFO ? odoo: Odoo version 19.0 
+2026-08-17 16:18:17,289 22708 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 16:18:17,289 22708 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 16:18:17,289 22708 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 16:18:17,718 22708 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 16:18:35,545 22708 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-08-17 16:18:35,548 22708 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-08-17 16:18:35,572 22708 INFO ? odoo.modules.loading: loading 67 modules... 
+2026-08-17 16:18:36,129 22708 INFO ? odoo.modules.loading: 67 modules loaded in 0.56s, 0 queries (+0 extra) 
+2026-08-17 16:18:36,262 22708 INFO ? odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 16:18:36,265 22708 INFO ? odoo.modules.loading: Modules loaded. 
+2026-08-17 16:18:36,304 22708 INFO ? odoo.registry: Registry loaded in 0.802s 
+2026-08-17 16:18:36,305 22708 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 16:18:36,334 22708 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 16:18:36] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 24 0.026 0.808
+2026-08-17 16:18:36,680 22708 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 16:18:36] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.029
+2026-08-17 16:18:36,718 22708 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 16:21:17,725 22708 WARNING ? odoo.service.server: Thread <Thread(odoo.service.http.request.1260, started 1260)> virtual real time limit (160/120s) reached. 
+2026-08-17 16:21:17,726 22708 INFO ? odoo.service.server: Dumping stacktrace of limit exceeding threads before reloading 
+2026-08-17 16:21:17,741 22708 INFO ? odoo.tools.misc: 
+# Thread: <Thread(odoo.service.http.request.1260, started 1260)> (db:n/a) (uid:n/a) (url:n/a) (qc:n/a qt:n/a pt:n/a)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+  self._bootstrap_inner()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+  self._context.run(self.run)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+  self._target(*self._args, **self._kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 697, in process_request_thread
+  self.finish_request(request, client_address)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 362, in finish_request
+  self.RequestHandlerClass(request, client_address, self)
+File: "D:\Ali Jawad\Projects\odoo-latest\odoo\odoo\service\server.py", line 132, in __init__
+  super().__init__(*args, **kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 766, in __init__
+  self.handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+  super().handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 500, in handle
+  self.handle_one_request()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 468, in handle_one_request
+  self.raw_requestline = self.rfile.readline(65537)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 729, in readinto
+  return self._sock.recv_into(b) 
+2026-08-17 17:19:28,709 18528 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 17:19:28,710 18528 INFO ? odoo: Odoo version 19.0 
+2026-08-17 17:19:28,710 18528 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 17:19:28,710 18528 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 17:19:28,710 18528 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 17:19:29,307 18528 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 17:19:46,450 18528 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-08-17 17:19:46,455 18528 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-08-17 17:19:46,548 18528 INFO ? odoo.modules.loading: loading 67 modules... 
+2026-08-17 17:19:47,893 18528 INFO ? odoo.modules.loading: 67 modules loaded in 1.34s, 0 queries (+0 extra) 
+2026-08-17 17:19:48,121 18528 INFO ? odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 17:19:48,127 18528 INFO ? odoo.modules.loading: Modules loaded. 
+2026-08-17 17:19:48,182 18528 INFO ? odoo.registry: Registry loaded in 1.961s 
+2026-08-17 17:19:48,184 18528 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 17:19:48,224 18528 INFO demo odoo.addons.base.models.res_device: User 2 inserts device log (k5bJZJ-xywP8nUfdNkByXADpkQFxX1f7y_zo_WQuoU) 
+2026-08-17 17:19:48,834 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:48] "GET /web/database/manager HTTP/1.1" 200 - 27 0.210 2.412
+2026-08-17 17:19:48,851 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:48] "GET /web/static/lib/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:19:48,852 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:48] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:19:49,164 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/dom/event-handler.js HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:19:49,164 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/dom/data.js HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:19:49,166 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/dom/manipulator.js HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:19:49,168 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/dom/selector-engine.js HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:19:49,169 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/index.js HTTP/1.1" 200 - 0 0.000 0.011
+2026-08-17 17:19:49,179 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/config.js HTTP/1.1" 200 - 0 0.000 0.012
+2026-08-17 17:19:49,483 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/focustrap.js HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:19:49,483 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/backdrop.js HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:19:49,485 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/component-functions.js HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:19:49,488 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/util/scrollbar.js HTTP/1.1" 200 - 0 0.000 0.010
+2026-08-17 17:19:49,490 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/base-component.js HTTP/1.1" 200 - 0 0.000 0.009
+2026-08-17 17:19:49,498 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/lib/bootstrap/js/dist/modal.js HTTP/1.1" 200 - 0 0.000 0.009
+2026-08-17 17:19:49,808 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/src/public/database_manager.js HTTP/1.1" 200 - 0 0.000 0.016
+2026-08-17 17:19:49,810 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:49] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 0 0.000 0.016
+2026-08-17 17:19:50,146 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:50] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:19:57,414 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:57] "GET / HTTP/1.1" 303 - 8 0.021 0.013
+2026-08-17 17:19:58,593 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:58] "GET /odoo HTTP/1.1" 200 - 72 0.106 0.790
+2026-08-17 17:19:59,108 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/webclient/load_menus HTTP/1.1" 200 - 18 0.045 0.148
+2026-08-17 17:19:59,108 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/assets/37a372a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.005 0.189
+2026-08-17 17:19:59,119 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/assets/a68562a/web.assets_web.min.js HTTP/1.1" 200 - 3 0.006 0.199
+2026-08-17 17:19:59,126 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 8 0.012 0.183
+2026-08-17 17:19:59,173 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/assets/955b6dc/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.002 0.007
+2026-08-17 17:19:59,451 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:19:59,651 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/static/img/odoo-icon-192x192.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:19:59,667 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 2 0.001 0.018
+2026-08-17 17:19:59,764 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "POST /web/action/load HTTP/1.1" 200 - 6 0.015 0.015
+2026-08-17 17:19:59,794 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 15 0.025 0.032
+2026-08-17 17:19:59,799 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "GET /web/image/res.partner/3/avatar_128?unique=1786952177000 HTTP/1.1" 200 - 7 0.016 0.019
+2026-08-17 17:19:59,982 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:19:59] "POST /mail/data HTTP/1.1" 200 - 65 0.187 0.060
+2026-08-17 17:20:00,093 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "POST /mail/data HTTP/1.1" 200 - 67 0.061 0.074
+2026-08-17 17:20:00,123 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 200 - 4 0.003 0.007
+2026-08-17 17:20:00,656 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /web/image/discuss.channel/1/avatar_128?unique=a490b1d1c32a90060b937f40f659b8c3a2960cacb8c8af205c61959a8b65810547f655cf9d85e6da44d9b02f20211b1398962b3346f857aceb73be5433ea1155 HTTP/1.1" 200 - 9 0.018 0.104
+2026-08-17 17:20:00,656 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "POST /discuss/channel/members HTTP/1.1" 200 - 12 0.023 0.100
+2026-08-17 17:20:00,656 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /web/image/discuss.channel/2/avatar_128?unique=d6d48fc03248019f6cdd53e0c051e4fe50128909e011d6aae7c79f59624b22ccb81f5f778e22bead89672b4ab79d577181d53f9750b2054b18b5af81e2bc4d90 HTTP/1.1" 200 - 9 0.018 0.104
+2026-08-17 17:20:00,658 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "POST /discuss/channel/messages HTTP/1.1" 200 - 6 0.011 0.114
+2026-08-17 17:20:00,658 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /web/image/discuss.channel/9/avatar_128?unique=ce9f5e6999aa619cab16a8f744d5444ef015e18e9944a7607d168421b056d331f069b9422e1092fec47ccf0aab21ff8233534836341cd63cdcc4d608c82d6649 HTTP/1.1" 200 - 4 0.006 0.117
+2026-08-17 17:20:00,676 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.107
+2026-08-17 17:20:00,691 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /web/image/res.partner/2/avatar_128?unique=1786970175000 HTTP/1.1" 200 - 6 0.022 0.131
+2026-08-17 17:20:00,718 18528 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 17:20:00,983 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:00] "GET /web/image/res.partner/3/avatar_128?unique=1786970177000 HTTP/1.1" 200 - 7 0.006 0.013
+2026-08-17 17:20:02,625 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:02] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.007
+2026-08-17 17:20:02,883 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:02] "GET /mail/static/lib/idb-keyval/idb-keyval.js HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:20:04,048 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:04] "POST /web/action/load HTTP/1.1" 200 - 25 0.024 0.021
+2026-08-17 17:20:04,400 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:04] "POST /web/action/run HTTP/1.1" 200 - 21 0.025 0.021
+2026-08-17 17:20:04,729 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:04] "POST /web/dataset/call_kw/crm.lead/get_views#crm.lead.get_views HTTP/1.1" 200 - 59 0.044 0.065
+2026-08-17 17:20:04,755 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:04] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.007 0.006
+2026-08-17 17:20:05,114 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 26 0.028 0.034
+2026-08-17 17:20:05,457 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "POST /web/dataset/call_kw/res.users/has_group#res.users.has_group HTTP/1.1" 200 - 1 0.001 0.004
+2026-08-17 17:20:05,716 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.partner/12/avatar_128 HTTP/1.1" 200 - 6 0.004 0.010
+2026-08-17 17:20:05,821 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.partner/11/avatar_128 HTTP/1.1" 200 - 6 0.012 0.024
+2026-08-17 17:20:05,831 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.partner/9/avatar_128 HTTP/1.1" 200 - 6 0.017 0.028
+2026-08-17 17:20:05,833 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.partner/15/avatar_128 HTTP/1.1" 200 - 6 0.018 0.027
+2026-08-17 17:20:05,835 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.partner/10/avatar_128 HTTP/1.1" 200 - 6 0.014 0.029
+2026-08-17 17:20:05,839 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:05] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 200 - 8 0.031 0.024
+2026-08-17 17:20:11,868 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:11] "POST /web/dataset/call_button/crm.lead/action_generate_leads#crm.lead.action_generate_leads HTTP/1.1" 200 - 1 0.001 0.005
+2026-08-17 17:20:12,159 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:12] "POST /web/dataset/call_kw/crm.iap.lead.mining.request/get_views#crm.iap.lead.mining.request.get_views HTTP/1.1" 200 - 14 0.012 0.020
+2026-08-17 17:20:12,210 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:12] "POST /web/dataset/call_kw/crm.iap.lead.mining.request/onchange#crm.iap.lead.mining.request.onchange HTTP/1.1" 200 - 12 0.007 0.017
+2026-08-17 17:20:15,732 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:15] "POST /web/dataset/call_kw/crm.iap.lead.industry/web_name_search#crm.iap.lead.industry.web_name_search HTTP/1.1" 200 - 2 0.004 0.006
+2026-08-17 17:20:18,072 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:18] "POST /web/dataset/call_kw/crm.iap.lead.industry/get_views#crm.iap.lead.industry.get_views HTTP/1.1" 200 - 9 0.006 0.013
+2026-08-17 17:20:18,308 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:18] "POST /web/dataset/call_kw/crm.iap.lead.industry/web_search_read#crm.iap.lead.industry.web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2026-08-17 17:20:20,961 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:20] "POST /web/dataset/call_kw/crm.iap.lead.industry/web_read#crm.iap.lead.industry.web_read HTTP/1.1" 200 - 2 0.002 0.004
+2026-08-17 17:20:23,068 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:23] "POST /web/dataset/call_kw/crm.iap.lead.mining.request/web_save#crm.iap.lead.mining.request.web_save HTTP/1.1" 200 - 13 0.014 0.013
+2026-08-17 17:20:23,374 18528 INFO demo odoo.addons.iap.tools.iap_tools: iap jsonrpc https://iap-services.odoo.com/api/dnb/1/search_by_criteria 
+2026-08-17 17:20:26,045 18528 INFO demo odoo.addons.iap.tools.iap_tools: iap jsonrpc https://iap-services.odoo.com/api/dnb/1/search_by_criteria responded in 2.666 seconds 
+2026-08-17 17:20:26,051 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:26] "POST /web/dataset/call_button/crm.iap.lead.mining.request/action_submit#crm.iap.lead.mining.request.action_submit HTTP/1.1" 200 - 54 0.045 2.715
+2026-08-17 17:20:26,081 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:26] "POST /web/dataset/call_kw/crm.iap.lead.mining.request/web_read#crm.iap.lead.mining.request.web_read HTTP/1.1" 200 - 13 0.013 0.012
+2026-08-17 17:20:29,434 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2026-08-17 17:20:29,459 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) fully done (#loop 1; done 0; remaining 0; duration 0.03s) 
+2026-08-17 17:20:29,473 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 17:20:29,496 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:20:29,502 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2026-08-17 17:20:29,521 18528 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:20:30,189 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:30] "POST /web/dataset/call_button/crm.iap.lead.mining.request/action_buy_credits#crm.iap.lead.mining.request.action_buy_credits HTTP/1.1" 200 - 6 0.005 0.011
+2026-08-17 17:20:30,486 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:20:30] "POST /web/dataset/call_kw/crm.iap.lead.mining.request/web_read#crm.iap.lead.mining.request.web_read HTTP/1.1" 200 - 13 0.008 0.044
+2026-08-17 17:22:52,283 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:52] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.005 0.007
+2026-08-17 17:22:52,323 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:52] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.024 0.027
+2026-08-17 17:22:53,955 18528 INFO demo odoo.addons.phone_validation.tools.phone_validation: The `phonenumbers` Python module is not installed, contact numbers will not be verified. Please install the `phonenumbers` Python module. 
+2026-08-17 17:22:53,973 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:53] "POST /web/dataset/call_kw/crm.lead/web_read#crm.lead.web_read HTTP/1.1" 200 - 32 0.041 0.041
+2026-08-17 17:22:54,327 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "POST /web/dataset/call_kw/crm.stage/search_read#crm.stage.search_read HTTP/1.1" 200 - 2 0.002 0.004
+2026-08-17 17:22:54,347 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "GET /partner_autocomplete/static/lib/jsvat.js HTTP/1.1" 200 - 0 0.000 0.018
+2026-08-17 17:22:54,594 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "POST /html_editor/get_ice_servers HTTP/1.1" 200 - 3 0.004 0.004
+2026-08-17 17:22:54,757 18528 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "GET /crm/static/src/img/pls-tooltip-ai-icon.png HTTP/1.1" 200 - 0 0.000 0.034
+2026-08-17 17:22:54,782 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.048 0.020
+2026-08-17 17:22:54,808 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "POST /mail/data HTTP/1.1" 200 - 52 0.070 0.038
+2026-08-17 17:22:54,826 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:54] "GET /web/bundle/web.assets_emoji?lang=en_US HTTP/1.1" 200 - 2 0.002 0.004
+2026-08-17 17:22:55,207 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:55] "GET /web/assets/372e83c/web.assets_emoji.min.js HTTP/1.1" 200 - 3 0.003 0.033
+2026-08-17 17:22:59,060 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "POST /web/dataset/call_button/crm.lead/action_set_won_rainbowman#crm.lead.action_set_won_rainbowman HTTP/1.1" 200 - 42 0.075 0.044
+2026-08-17 17:22:59,412 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.019 0.022
+2026-08-17 17:22:59,424 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "POST /web/dataset/call_kw/crm.lead/web_read#crm.lead.web_read HTTP/1.1" 200 - 31 0.029 0.024
+2026-08-17 17:22:59,639 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "POST /web/dataset/call_kw/crm.stage/search_read#crm.stage.search_read HTTP/1.1" 200 - 2 0.003 0.008
+2026-08-17 17:22:59,801 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "GET /web/image/res.users/2/image_1024 HTTP/1.1" 200 - 7 0.008 0.024
+2026-08-17 17:22:59,827 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:22:59] "POST /mail/data HTTP/1.1" 200 - 35 0.036 0.039
+2026-08-17 17:23:02,974 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:02] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.004 0.008
+2026-08-17 17:23:03,327 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:03] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.021 0.039
+2026-08-17 17:23:05,648 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:05] "POST /web/dataset/call_kw/crm.lead/web_read#crm.lead.web_read HTTP/1.1" 200 - 24 0.023 0.013
+2026-08-17 17:23:05,905 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:05] "POST /web/dataset/call_kw/crm.stage/search_read#crm.stage.search_read HTTP/1.1" 200 - 2 0.003 0.007
+2026-08-17 17:23:06,026 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:06] "POST /mail/data HTTP/1.1" 200 - 30 0.029 0.031
+2026-08-17 17:23:06,048 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:06] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.030 0.021
+2026-08-17 17:23:08,049 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:08] "POST /web/action/load HTTP/1.1" 200 - 11 0.027 0.017
+2026-08-17 17:23:08,376 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:08] "POST /web/dataset/call_kw/crm.lead.lost/get_views#crm.lead.lost.get_views HTTP/1.1" 200 - 8 0.004 0.007
+2026-08-17 17:23:08,620 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:08] "POST /web/dataset/call_kw/crm.lead.lost/onchange#crm.lead.lost.onchange HTTP/1.1" 200 - 2 0.002 0.004
+2026-08-17 17:23:08,698 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:08] "POST /web/dataset/call_kw/crm.lost.reason/name_search#crm.lost.reason.name_search HTTP/1.1" 200 - 3 0.004 0.003
+2026-08-17 17:23:16,785 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:16] "POST /web/dataset/call_kw/crm.lead.lost/web_save#crm.lead.lost.web_save HTTP/1.1" 200 - 9 0.034 0.011
+2026-08-17 17:23:17,146 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:17] "POST /web/dataset/call_button/crm.lead.lost/action_lost_reason_apply#crm.lead.lost.action_lost_reason_apply HTTP/1.1" 200 - 24 0.030 0.019
+2026-08-17 17:23:17,380 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:17] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.008 0.011
+2026-08-17 17:23:17,483 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:17] "POST /web/dataset/call_kw/crm.lead/web_read#crm.lead.web_read HTTP/1.1" 200 - 25 0.010 0.014
+2026-08-17 17:23:17,554 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:17] "POST /mail/data HTTP/1.1" 200 - 30 0.017 0.029
+2026-08-17 17:23:20,520 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:20] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.006 0.008
+2026-08-17 17:23:20,560 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:20] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.019 0.033
+2026-08-17 17:23:27,581 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:27] "POST /web/dataset/call_kw/crm.lead/web_read#crm.lead.web_read HTTP/1.1" 200 - 25 0.023 0.027
+2026-08-17 17:23:27,862 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:27] "POST /web/dataset/call_kw/crm.stage/search_read#crm.stage.search_read HTTP/1.1" 200 - 2 0.003 0.006
+2026-08-17 17:23:27,955 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:27] "POST /mail/thread/messages HTTP/1.1" 200 - 5 0.004 0.005
+2026-08-17 17:23:27,970 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:27] "POST /mail/data HTTP/1.1" 200 - 30 0.015 0.019
+2026-08-17 17:23:28,592 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:28] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.005 0.007
+2026-08-17 17:23:28,628 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:28] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.018 0.030
+2026-08-17 17:23:29,890 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:29] "POST /web/action/run HTTP/1.1" 200 - 19 0.009 0.015
+2026-08-17 17:23:30,229 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:30] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.003 0.009
+2026-08-17 17:23:30,263 18528 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:23:30] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.018 0.027
+2026-08-17 17:26:29,316 18528 WARNING ? odoo.service.server: Thread <Thread(odoo.service.http.request.17428, started 17428)> virtual real time limit (178/120s) reached. 
+2026-08-17 17:26:29,316 18528 INFO ? odoo.service.server: Dumping stacktrace of limit exceeding threads before reloading 
+2026-08-17 17:26:29,325 18528 INFO ? odoo.tools.misc: 
+# Thread: <Thread(odoo.service.http.request.17428, started 17428)> (db:n/a) (uid:n/a) (url:n/a) (qc:n/a qt:n/a pt:n/a)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+  self._bootstrap_inner()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+  self._context.run(self.run)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+  self._target(*self._args, **self._kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 697, in process_request_thread
+  self.finish_request(request, client_address)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 362, in finish_request
+  self.RequestHandlerClass(request, client_address, self)
+File: "D:\Ali Jawad\Projects\odoo-latest\odoo\odoo\service\server.py", line 132, in __init__
+  super().__init__(*args, **kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 766, in __init__
+  self.handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+  super().handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 500, in handle
+  self.handle_one_request()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 468, in handle_one_request
+  self.raw_requestline = self.rfile.readline(65537)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 729, in readinto
+  return self._sock.recv_into(b) 
+2026-08-17 17:27:17,865 20404 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 17:27:17,865 20404 INFO ? odoo: Odoo version 19.0 
+2026-08-17 17:27:17,865 20404 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 17:27:17,865 20404 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 17:27:17,865 20404 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 17:27:18,249 20404 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 17:27:18,485 20404 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-08-17 17:27:18,488 20404 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-08-17 17:27:18,508 20404 INFO ? odoo.modules.loading: loading 67 modules... 
+2026-08-17 17:27:19,034 20404 INFO ? odoo.modules.loading: 67 modules loaded in 0.53s, 0 queries (+0 extra) 
+2026-08-17 17:27:19,156 20404 INFO ? odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 17:27:19,159 20404 INFO ? odoo.modules.loading: Modules loaded. 
+2026-08-17 17:27:19,194 20404 INFO ? odoo.registry: Registry loaded in 0.882s 
+2026-08-17 17:27:19,196 20404 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 17:27:19,641 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:19] "GET /odoo/crm HTTP/1.1" 200 - 100 0.064 1.267
+2026-08-17 17:27:19,735 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:19] "GET /web/webclient/load_menus HTTP/1.1" 200 - 18 0.013 0.054
+2026-08-17 17:27:20,066 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:20] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 8 0.015 0.041
+2026-08-17 17:27:24,198 20404 INFO demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/7384e9e/web.assets_web.min.js (id:975) 
+2026-08-17 17:27:24,200 20404 INFO demo odoo.addons.base.models.assetsbundle: Deleting attachments [974] (matching /web/assets/_______/web.assets_web.min.js) because it was replaced with /web/assets/7384e9e/web.assets_web.min.js 
+2026-08-17 17:27:24,277 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:24] "GET /web/assets/7384e9e/web.assets_web.min.js HTTP/1.1" 200 - 17 0.042 4.570
+2026-08-17 17:27:24,788 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:24] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.012
+2026-08-17 17:27:24,847 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:24] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 2 0.004 0.065
+2026-08-17 17:27:24,944 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:24] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.010 0.078
+2026-08-17 17:27:24,984 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:24] "POST /web/dataset/call_kw/crm.lead/get_views#crm.lead.get_views HTTP/1.1" 200 - 61 0.086 0.119
+2026-08-17 17:27:25,008 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "POST /mail/data HTTP/1.1" 200 - 64 0.106 0.052
+2026-08-17 17:27:25,014 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 26 0.044 0.108
+2026-08-17 17:27:25,112 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "POST /web/dataset/call_kw/res.users/has_group#res.users.has_group HTTP/1.1" 200 - 1 0.001 0.006
+2026-08-17 17:27:25,184 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.partner/10/avatar_128 HTTP/1.1" 304 - 14 0.012 0.021
+2026-08-17 17:27:25,280 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.007 0.018
+2026-08-17 17:27:25,481 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.partner/12/avatar_128 HTTP/1.1" 304 - 6 0.021 0.024
+2026-08-17 17:27:25,486 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.partner/11/avatar_128 HTTP/1.1" 304 - 6 0.020 0.024
+2026-08-17 17:27:25,486 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 8 0.027 0.022
+2026-08-17 17:27:25,488 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.partner/9/avatar_128 HTTP/1.1" 304 - 6 0.025 0.023
+2026-08-17 17:27:25,509 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /web/image/res.partner/15/avatar_128 HTTP/1.1" 304 - 6 0.005 0.012
+2026-08-17 17:27:25,599 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.004 0.010
+2026-08-17 17:27:25,927 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:25] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.006
+2026-08-17 17:27:25,949 20404 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 17:27:27,045 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:27] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:27:51,372 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:51] "POST /web/action/load HTTP/1.1" 200 - 10 0.007 0.008
+2026-08-17 17:27:52,865 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:52] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 409 0.227 1.033
+2026-08-17 17:27:53,078 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 155 0.134 0.063
+2026-08-17 17:27:53,485 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2026-08-17 17:27:53,486 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2026-08-17 17:27:53,486 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.016
+2026-08-17 17:27:53,486 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.017
+2026-08-17 17:27:53,486 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:27:53] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.018
+2026-08-17 17:28:00,568 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:00] "POST /web/action/load HTTP/1.1" 200 - 10 0.025 0.015
+2026-08-17 17:28:00,957 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:00] "POST /web/dataset/call_kw/ir.module.module/get_views#ir.module.module.get_views HTTP/1.1" 200 - 37 0.026 0.039
+2026-08-17 17:28:01,149 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range#ir.module.module.search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:28:01,285 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "POST /web/dataset/call_kw/ir.module.module/check_module_update#ir.module.module.check_module_update HTTP/1.1" 200 - 2 0.003 0.007
+2026-08-17 17:28:01,324 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range#ir.module.module.search_panel_select_range HTTP/1.1" 200 - 42 0.030 0.020
+2026-08-17 17:28:01,436 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "POST /web/dataset/call_kw/ir.module.module/web_search_read#ir.module.module.web_search_read HTTP/1.1" 200 - 2 0.003 0.159
+2026-08-17 17:28:01,469 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "POST /web/dataset/call_kw/ir.module.module/check_module_update#ir.module.module.check_module_update HTTP/1.1" 200 - 2 0.002 0.003
+2026-08-17 17:28:01,835 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:28:01,837 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:01,837 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:28:01,842 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:01,846 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.015
+2026-08-17 17:28:01,847 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:01] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.015
+2026-08-17 17:28:02,158 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:28:02,159 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2026-08-17 17:28:02,163 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.010
+2026-08-17 17:28:02,167 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.011
+2026-08-17 17:28:02,169 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.013
+2026-08-17 17:28:02,172 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.011
+2026-08-17 17:28:02,471 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:02,473 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:02,475 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.007
+2026-08-17 17:28:02,480 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:02,485 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2026-08-17 17:28:02,490 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.007
+2026-08-17 17:28:02,785 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:02,785 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:02,796 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:28:02,798 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /marketing_card/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.010
+2026-08-17 17:28:02,800 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:02,801 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:02] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:03,110 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:03,111 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:03,116 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2026-08-17 17:28:03,121 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:03,124 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:03,126 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:28:03,429 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:03,431 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:28:03,431 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:03,434 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2026-08-17 17:28:03,437 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:03,438 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2026-08-17 17:28:03,767 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.001
+2026-08-17 17:28:03,769 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:28:03,770 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.005
+2026-08-17 17:28:03,773 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2026-08-17 17:28:03,775 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2026-08-17 17:28:03,781 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:03] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.012
+2026-08-17 17:28:04,082 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:04,085 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.004
+2026-08-17 17:28:04,086 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /project_todo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:28:04,088 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:04,091 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.001
+2026-08-17 17:28:04,092 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:04,414 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:04,418 20404 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:28:04] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:28:18,358 20404 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 17:28:18,389 20404 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.03s) 
+2026-08-17 17:30:40,819 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:40] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.008
+2026-08-17 17:30:41,141 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "POST /web/dataset/call_kw/res.partner/get_views#res.partner.get_views HTTP/1.1" 200 - 36 0.039 0.056
+2026-08-17 17:30:41,341 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "POST /web/dataset/call_kw/res.partner/web_search_read#res.partner.web_search_read HTTP/1.1" 200 - 39 0.053 0.134
+2026-08-17 17:30:41,771 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/21/avatar_128?unique=1786970176000 HTTP/1.1" 200 - 6 0.014 0.028
+2026-08-17 17:30:41,772 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/32/avatar_128?unique=1786970176000 HTTP/1.1" 200 - 6 0.018 0.026
+2026-08-17 17:30:41,773 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/24/avatar_128?unique=1786970176000 HTTP/1.1" 200 - 6 0.017 0.026
+2026-08-17 17:30:41,773 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/34/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.012 0.032
+2026-08-17 17:30:41,796 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/28/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.011 0.045
+2026-08-17 17:30:41,804 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:41] "GET /web/image/res.partner/10/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.020 0.054
+2026-08-17 17:30:42,088 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/23/avatar_128?unique=1786970176000 HTTP/1.1" 200 - 6 0.004 0.009
+2026-08-17 17:30:42,120 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/43/avatar_128?unique=1786970185000 HTTP/1.1" 200 - 6 0.012 0.018
+2026-08-17 17:30:42,122 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/9/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.011 0.019
+2026-08-17 17:30:42,129 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/36/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.012 0.026
+2026-08-17 17:30:42,149 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/19/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.012 0.021
+2026-08-17 17:30:42,152 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/20/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.010 0.021
+2026-08-17 17:30:42,405 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/15/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.002 0.007
+2026-08-17 17:30:42,437 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/27/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.003 0.007
+2026-08-17 17:30:42,457 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/13/avatar_128?unique=1786970185000 HTTP/1.1" 200 - 6 0.007 0.010
+2026-08-17 17:30:42,464 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/16/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.009 0.015
+2026-08-17 17:30:42,480 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/35/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.006 0.014
+2026-08-17 17:30:42,489 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/12/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.007 0.016
+2026-08-17 17:30:42,745 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/44/avatar_128?unique=1786970177000 HTTP/1.1" 200 - 6 0.003 0.006
+2026-08-17 17:30:42,756 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/42/avatar_128?unique=1786970185000 HTTP/1.1" 200 - 6 0.003 0.006
+2026-08-17 17:30:42,787 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/22/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.007 0.010
+2026-08-17 17:30:42,789 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/11/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.008 0.012
+2026-08-17 17:30:42,810 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/26/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.006 0.014
+2026-08-17 17:30:42,815 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:42] "GET /web/image/res.partner/38/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.006 0.015
+2026-08-17 17:30:43,082 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/25/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.004 0.007
+2026-08-17 17:30:43,093 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/37/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.003 0.007
+2026-08-17 17:30:43,113 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/39/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.008 0.009
+2026-08-17 17:30:43,113 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/31/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.007 0.011
+2026-08-17 17:30:43,133 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/14/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.005 0.014
+2026-08-17 17:30:43,139 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/30/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.006 0.011
+2026-08-17 17:30:43,422 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/8/avatar_128?unique=1786970433000 HTTP/1.1" 200 - 6 0.005 0.009
+2026-08-17 17:30:43,422 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/29/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.007 0.008
+2026-08-17 17:30:43,454 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/33/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.012 0.018
+2026-08-17 17:30:43,455 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/18/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.015 0.016
+2026-08-17 17:30:43,482 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/17/avatar_128?unique=1786970161000 HTTP/1.1" 200 - 6 0.015 0.024
+2026-08-17 17:30:43,557 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "POST /web/dataset/call_kw/res.partner/web_search_read#res.partner.web_search_read HTTP/1.1" 200 - 29 0.037 0.072
+2026-08-17 17:30:43,788 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/1/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.015 0.018
+2026-08-17 17:30:43,802 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/40/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.018 0.026
+2026-08-17 17:30:43,814 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/41/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 6 0.010 0.023
+2026-08-17 17:30:43,824 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/7/avatar_128?unique=1786970139000 HTTP/1.1" 200 - 7 0.019 0.022
+2026-08-17 17:30:43,829 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/6/avatar_128?unique=1786970194000 HTTP/1.1" 200 - 7 0.015 0.023
+2026-08-17 17:30:43,953 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:43] "GET /web/image/res.partner/10/avatar_128 HTTP/1.1" 304 - 6 0.003 0.006
+2026-08-17 17:30:44,105 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/9/avatar_128 HTTP/1.1" 304 - 6 0.003 0.006
+2026-08-17 17:30:44,119 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/15/avatar_128 HTTP/1.1" 304 - 6 0.003 0.009
+2026-08-17 17:30:44,136 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/16/avatar_128 HTTP/1.1" 200 - 6 0.005 0.009
+2026-08-17 17:30:44,148 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/11/avatar_128 HTTP/1.1" 304 - 6 0.004 0.011
+2026-08-17 17:30:44,157 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/14/avatar_128 HTTP/1.1" 200 - 6 0.005 0.014
+2026-08-17 17:30:44,282 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/8/avatar_128 HTTP/1.1" 200 - 6 0.003 0.007
+2026-08-17 17:30:44,435 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:44] "GET /web/image/res.partner/1/avatar_128 HTTP/1.1" 200 - 6 0.003 0.008
+2026-08-17 17:30:48,787 20404 INFO demo odoo.addons.phone_validation.tools.phone_validation: The `phonenumbers` Python module is not installed, contact numbers will not be verified. Please install the `phonenumbers` Python module. 
+2026-08-17 17:30:48,808 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:48] "POST /web/dataset/call_kw/res.partner/web_read#res.partner.web_read HTTP/1.1" 200 - 56 0.083 0.046
+2026-08-17 17:30:48,953 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:48] "POST /mail/thread/messages HTTP/1.1" 200 - 11 0.010 0.014
+2026-08-17 17:30:49,250 20404 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:30:49] "POST /mail/data HTTP/1.1" 200 - 30 0.015 0.019
+2026-08-17 17:33:18,257 20404 WARNING ? odoo.service.server: Thread <Thread(odoo.service.http.request.10396, started 10396)> virtual real time limit (149/120s) reached. 
+2026-08-17 17:33:18,257 20404 INFO ? odoo.service.server: Dumping stacktrace of limit exceeding threads before reloading 
+2026-08-17 17:33:18,262 20404 INFO ? odoo.tools.misc: 
+# Thread: <Thread(odoo.service.http.request.10396, started 10396)> (db:n/a) (uid:n/a) (url:n/a) (qc:n/a qt:n/a pt:n/a)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+  self._bootstrap_inner()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+  self._context.run(self.run)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+  self._target(*self._args, **self._kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 697, in process_request_thread
+  self.finish_request(request, client_address)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 362, in finish_request
+  self.RequestHandlerClass(request, client_address, self)
+File: "D:\Ali Jawad\Projects\odoo-latest\odoo\odoo\service\server.py", line 132, in __init__
+  super().__init__(*args, **kwargs)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 766, in __init__
+  self.handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+  super().handle()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 500, in handle
+  self.handle_one_request()
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\http\server.py", line 468, in handle_one_request
+  self.raw_requestline = self.rfile.readline(65537)
+File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 729, in readinto
+  return self._sock.recv_into(b) 
+2026-08-17 17:37:40,463 22460 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-08-17 17:37:40,464 22460 INFO ? odoo: Odoo version 19.0 
+2026-08-17 17:37:40,464 22460 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-17 17:37:40,464 22460 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-17 17:37:40,464 22460 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-17 17:37:40,926 22460 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-1RTTENA:8069 
+2026-08-17 17:37:41,374 22460 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-08-17 17:37:41,376 22460 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-08-17 17:37:41,398 22460 INFO ? odoo.modules.loading: loading 67 modules... 
+2026-08-17 17:37:41,940 22460 INFO ? odoo.modules.loading: 67 modules loaded in 0.54s, 0 queries (+0 extra) 
+2026-08-17 17:37:42,054 22460 INFO ? odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled 
+2026-08-17 17:37:42,057 22460 INFO ? odoo.modules.loading: Modules loaded. 
+2026-08-17 17:37:42,096 22460 INFO ? odoo.registry: Registry loaded in 0.763s 
+2026-08-17 17:37:42,098 22460 INFO demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-08-17 17:37:42,130 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:42] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 24 0.030 0.769
+2026-08-17 17:37:42,140 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:42] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.003 0.002
+2026-08-17 17:37:42,461 22460 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-08-17 17:37:42,627 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:42] "GET /odoo/contacts/6 HTTP/1.1" 200 - 77 0.050 0.816
+2026-08-17 17:37:42,824 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:42] "GET /web/webclient/load_menus HTTP/1.1" 200 - 17 0.015 0.157
+2026-08-17 17:37:43,448 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 8 0.024 0.096
+2026-08-17 17:37:43,449 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 2 0.011 0.204
+2026-08-17 17:37:43,449 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "POST /web/dataset/call_kw/res.partner/get_views#res.partner.get_views HTTP/1.1" 200 - 50 0.073 0.141
+2026-08-17 17:37:43,448 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "POST /mail/data HTTP/1.1" 200 - 62 0.129 0.084
+2026-08-17 17:37:43,493 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 12 0.028 0.135
+2026-08-17 17:37:43,542 22460 INFO demo odoo.addons.phone_validation.tools.phone_validation: The `phonenumbers` Python module is not installed, contact numbers will not be verified. Please install the `phonenumbers` Python module. 
+2026-08-17 17:37:43,571 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "POST /web/dataset/call_kw/res.partner/web_read#res.partner.web_read HTTP/1.1" 200 - 63 0.101 0.154
+2026-08-17 17:37:43,790 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "POST /mail/thread/messages HTTP/1.1" 200 - 11 0.012 0.017
+2026-08-17 17:37:43,855 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.006 0.012
+2026-08-17 17:37:43,881 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:43] "POST /mail/data HTTP/1.1" 200 - 30 0.031 0.033
+2026-08-17 17:37:44,185 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:44] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.002 0.007
+2026-08-17 17:37:44,665 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:44] "GET /odoo/contacts/6 HTTP/1.1" 200 - 20 0.013 0.023
+2026-08-17 17:37:44,713 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:44] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.002 0.007
+2026-08-17 17:37:44,896 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:44] "GET /web/assets/37a372a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.002 0.013
+2026-08-17 17:37:45,047 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/assets/7384e9e/web.assets_web.min.js HTTP/1.1" 200 - 3 0.003 0.009
+2026-08-17 17:37:45,048 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.005 0.008
+2026-08-17 17:37:45,375 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:37:45,465 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.002 0.005
+2026-08-17 17:37:45,547 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "POST /web/dataset/call_kw/res.partner/get_views#res.partner.get_views HTTP/1.1" 200 - 2 0.002 0.037
+2026-08-17 17:37:45,598 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.023 0.022
+2026-08-17 17:37:45,618 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "POST /mail/data HTTP/1.1" 200 - 36 0.071 0.039
+2026-08-17 17:37:45,677 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "POST /web/dataset/call_kw/res.partner/web_read#res.partner.web_read HTTP/1.1" 200 - 44 0.066 0.060
+2026-08-17 17:37:45,703 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/image/res.partner/3/avatar_128?unique=1786952177000 HTTP/1.1" 200 - 7 0.006 0.017
+2026-08-17 17:37:45,774 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /partner_autocomplete/static/lib/jsvat.js HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:37:45,864 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.003
+2026-08-17 17:37:45,955 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "POST /mail/thread/messages HTTP/1.1" 200 - 6 0.007 0.013
+2026-08-17 17:37:45,956 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:45] "POST /mail/data HTTP/1.1" 200 - 21 0.019 0.029
+2026-08-17 17:37:46,117 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.004 0.011
+2026-08-17 17:37:46,128 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /web/image/res.partner/6/avatar_128?unique=1786970194000 HTTP/1.1" 200 - 7 0.011 0.016
+2026-08-17 17:37:46,133 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /web/assets/955b6dc/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.002 0.029
+2026-08-17 17:37:46,184 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:37:46,478 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.001 0.003
+2026-08-17 17:37:46,799 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:46] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.006
+2026-08-17 17:37:50,450 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:50] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.014
+2026-08-17 17:37:50,830 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:50] "POST /web/dataset/call_kw/ir.module.module/get_views#ir.module.module.get_views HTTP/1.1" 200 - 37 0.022 0.036
+2026-08-17 17:37:51,032 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range#ir.module.module.search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.002
+2026-08-17 17:37:51,156 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:51] "POST /web/dataset/call_kw/ir.module.module/check_module_update#ir.module.module.check_module_update HTTP/1.1" 200 - 2 0.002 0.003
+2026-08-17 17:37:51,193 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range#ir.module.module.search_panel_select_range HTTP/1.1" 200 - 42 0.028 0.015
+2026-08-17 17:37:51,252 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read#ir.module.module.web_search_read HTTP/1.1" 200 - 3 0.005 0.096
+2026-08-17 17:37:51,276 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:37:51] "POST /web/dataset/call_kw/ir.module.module/check_module_update#ir.module.module.check_module_update HTTP/1.1" 200 - 2 0.002 0.003
+2026-08-17 17:38:21,250 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:21] "POST /web/action/load HTTP/1.1" 200 - 9 0.007 0.010
+2026-08-17 17:38:22,357 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:22] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 409 0.167 0.704
+2026-08-17 17:38:22,495 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:22] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 153 0.072 0.052
+2026-08-17 17:38:22,879 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:22] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.002 0.006
+2026-08-17 17:38:22,919 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:22] "POST /base_setup/data HTTP/1.1" 200 - 6 0.033 0.005
+2026-08-17 17:38:40,133 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:40] "POST /web/dataset/call_kw/res.users/action_get#res.users.action_get HTTP/1.1" 200 - 11 0.008 0.014
+2026-08-17 17:38:40,534 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:40] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 38 0.047 0.033
+2026-08-17 17:38:40,772 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:40] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 20 0.039 0.016
+2026-08-17 17:38:40,883 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:38:40] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 8 0.012 0.023
+2026-08-17 17:38:41,019 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2026-08-17 17:38:41,043 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:38:41,053 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 17:38:41,070 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:38:41,075 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2026-08-17 17:38:41,098 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:39:24,546 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:24] "POST /web/dataset/call_kw/res.users/action_get#res.users.action_get HTTP/1.1" 200 - 9 0.007 0.012
+2026-08-17 17:39:24,891 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:24] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 16 0.010 0.021
+2026-08-17 17:39:46,890 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:46] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 55 0.055 0.044
+2026-08-17 17:39:47,217 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:47] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.008
+2026-08-17 17:39:47,796 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:47] "POST /web/dataset/call_kw/res.company/get_views#res.company.get_views HTTP/1.1" 200 - 300 0.150 0.180
+2026-08-17 17:39:47,846 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:47] "POST /web/dataset/call_kw/res.company/web_search_read#res.company.web_search_read HTTP/1.1" 200 - 5 0.004 0.017
+2026-08-17 17:39:48,187 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:48] "GET /web/static/img/openhand.cur HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:39:51,207 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:51] "POST /web/dataset/call_kw/res.company/web_read#res.company.web_read HTTP/1.1" 200 - 16 0.008 0.016
+2026-08-17 17:39:51,594 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:51] "POST /mail/data HTTP/1.1" 200 - 27 0.027 0.019
+2026-08-17 17:39:51,604 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:51] "POST /mail/thread/messages HTTP/1.1" 200 - 24 0.034 0.021
+2026-08-17 17:39:51,806 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:51] "GET /web/bundle/web.assets_emoji?lang=en_US HTTP/1.1" 200 - 2 0.002 0.006
+2026-08-17 17:39:52,624 22460 INFO ? werkzeug: 127.0.0.1 - - [17/Aug/2026 17:39:52] "GET /web/static/img/placeholder.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-08-17 17:40:23,715 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:23] "POST /web/dataset/call_kw/res.company/web_save#res.company.web_save HTTP/1.1" 200 - 82 0.052 0.076
+2026-08-17 17:40:23,869 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:23] "GET /odoo/settings/3/companies/2 HTTP/1.1" 200 - 20 0.012 0.022
+2026-08-17 17:40:24,027 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.007
+2026-08-17 17:40:24,057 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.005 0.009
+2026-08-17 17:40:24,110 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.002 0.004
+2026-08-17 17:40:24,120 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.003 0.006
+2026-08-17 17:40:24,305 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "POST /mail/data HTTP/1.1" 200 - 36 0.036 0.042
+2026-08-17 17:40:24,475 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "POST /web/dataset/call_kw/res.company/get_views#res.company.get_views HTTP/1.1" 200 - 277 0.121 0.150
+2026-08-17 17:40:24,502 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.006 0.018
+2026-08-17 17:40:24,511 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "POST /web/dataset/call_kw/res.company/web_read#res.company.web_read HTTP/1.1" 200 - 12 0.016 0.018
+2026-08-17 17:40:24,517 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.008
+2026-08-17 17:40:24,617 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "POST /mail/data HTTP/1.1" 200 - 22 0.022 0.022
+2026-08-17 17:40:24,620 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.021 0.019
+2026-08-17 17:40:24,971 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:24] "GET /web/bundle/web.assets_emoji?lang=en_US HTTP/1.1" 200 - 1 0.002 0.005
+2026-08-17 17:40:26,146 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:26] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.002 0.006
+2026-08-17 17:40:33,278 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:33] "POST /web/dataset/call_kw/res.company/has_access#res.company.has_access HTTP/1.1" 200 - 5 0.003 0.005
+2026-08-17 17:40:33,549 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:33] "GET /odoo/settings/3/companies/2 HTTP/1.1" 200 - 20 0.010 0.021
+2026-08-17 17:40:33,626 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:33] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.023
+2026-08-17 17:40:33,884 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:33] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.002 0.006
+2026-08-17 17:40:33,985 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:33] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.014 0.011
+2026-08-17 17:40:34,040 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.007 0.020
+2026-08-17 17:40:34,059 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.023 0.024
+2026-08-17 17:40:34,126 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "POST /mail/data HTTP/1.1" 200 - 60 0.109 0.060
+2026-08-17 17:40:34,359 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "POST /web/dataset/call_kw/res.company/get_views#res.company.get_views HTTP/1.1" 200 - 301 0.177 0.228
+2026-08-17 17:40:34,367 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.005
+2026-08-17 17:40:34,703 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "POST /web/dataset/call_kw/res.company/web_read#res.company.web_read HTTP/1.1" 200 - 16 0.013 0.018
+2026-08-17 17:40:34,982 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:34] "POST /mail/data HTTP/1.1" 200 - 28 0.021 0.025
+2026-08-17 17:40:35,122 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:35] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.015 0.018
+2026-08-17 17:40:35,159 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:35] "GET /web/bundle/web.assets_emoji?lang=en_US HTTP/1.1" 200 - 1 0.002 0.003
+2026-08-17 17:40:35,919 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:40:35] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2026-08-17 17:42:27,755 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:27] "GET / HTTP/1.1" 303 - 1 0.001 0.003
+2026-08-17 17:42:27,792 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:27] "GET /odoo HTTP/1.1" 200 - 20 0.012 0.020
+2026-08-17 17:42:28,001 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.004
+2026-08-17 17:42:28,136 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.001 0.004
+2026-08-17 17:42:28,262 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "POST /web/action/load HTTP/1.1" 200 - 6 0.020 0.008
+2026-08-17 17:42:28,291 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "POST /mail/data HTTP/1.1" 200 - 36 0.024 0.031
+2026-08-17 17:42:28,311 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.007 0.010
+2026-08-17 17:42:28,318 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.009 0.014
+2026-08-17 17:42:28,443 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "POST /mail/data HTTP/1.1" 200 - 66 0.046 0.081
+2026-08-17 17:42:28,610 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "POST /discuss/channel/messages HTTP/1.1" 200 - 5 0.005 0.008
+2026-08-17 17:42:28,881 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "POST /discuss/channel/members HTTP/1.1" 200 - 9 0.006 0.010
+2026-08-17 17:42:28,889 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:28] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.002 0.005
+2026-08-17 17:42:29,219 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:29] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.005
+2026-08-17 17:42:30,483 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:30] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2026-08-17 17:42:34,959 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:34] "GET /odoo/discuss HTTP/1.1" 200 - 20 0.014 0.024
+2026-08-17 17:42:35,231 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:42:35,355 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.006 0.005
+2026-08-17 17:42:35,356 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.002 0.007
+2026-08-17 17:42:35,409 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.009 0.011
+2026-08-17 17:42:35,435 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.004 0.008
+2026-08-17 17:42:35,477 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "POST /mail/data HTTP/1.1" 200 - 97 0.054 0.078
+2026-08-17 17:42:35,758 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.002 0.006
+2026-08-17 17:42:35,899 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "POST /discuss/channel/messages HTTP/1.1" 200 - 5 0.004 0.007
+2026-08-17 17:42:35,909 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:35] "POST /discuss/channel/members HTTP/1.1" 200 - 4 0.003 0.005
+2026-08-17 17:42:37,066 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:37] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2026-08-17 17:42:51,000 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:50] "POST /web/action/load HTTP/1.1" 200 - 10 0.026 0.015
+2026-08-17 17:42:51,401 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "POST /web/dataset/call_kw/discuss.channel/get_views#discuss.channel.get_views HTTP/1.1" 200 - 29 0.037 0.032
+2026-08-17 17:42:51,593 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "POST /web/dataset/call_kw/discuss.channel/web_search_read#discuss.channel.web_search_read HTTP/1.1" 200 - 7 0.004 0.012
+2026-08-17 17:42:51,743 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/9/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.005 0.010
+2026-08-17 17:42:51,953 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/1/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.012 0.008
+2026-08-17 17:42:51,954 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/3/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.006 0.015
+2026-08-17 17:42:51,955 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/7/avatar_128?unique=1786972502000 HTTP/1.1" 200 - 4 0.017 0.005
+2026-08-17 17:42:51,954 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/2/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.005 0.014
+2026-08-17 17:42:51,954 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:51] "GET /web/image/discuss.channel/8/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.014 0.006
+2026-08-17 17:42:52,055 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:52] "GET /web/image/discuss.channel/4/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.002 0.005
+2026-08-17 17:42:52,275 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:52] "GET /web/image/discuss.channel/5/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.005 0.009
+2026-08-17 17:42:52,290 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:52] "GET /web/image/discuss.channel/6/avatar_128?unique=1786970129000 HTTP/1.1" 200 - 4 0.004 0.009
+2026-08-17 17:42:59,221 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:59] "POST /web/action/load HTTP/1.1" 200 - 25 0.014 0.018
+2026-08-17 17:42:59,457 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:59] "POST /web/action/run HTTP/1.1" 200 - 20 0.008 0.013
+2026-08-17 17:42:59,667 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:59] "POST /web/dataset/call_kw/crm.lead/get_views#crm.lead.get_views HTTP/1.1" 200 - 49 0.042 0.090
+2026-08-17 17:42:59,801 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:42:59] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.005 0.008
+2026-08-17 17:43:00,039 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 26 0.020 0.028
+2026-08-17 17:43:00,070 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "POST /web/dataset/call_kw/res.users/has_group#res.users.has_group HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:43:00,469 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 8 0.023 0.022
+2026-08-17 17:43:00,473 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.partner/12/avatar_128 HTTP/1.1" 304 - 6 0.015 0.035
+2026-08-17 17:43:00,475 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.partner/9/avatar_128 HTTP/1.1" 304 - 6 0.032 0.019
+2026-08-17 17:43:00,476 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.partner/11/avatar_128 HTTP/1.1" 304 - 6 0.017 0.035
+2026-08-17 17:43:00,480 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.partner/15/avatar_128 HTTP/1.1" 304 - 6 0.030 0.024
+2026-08-17 17:43:00,484 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:00] "GET /web/image/res.partner/10/avatar_128 HTTP/1.1" 304 - 6 0.033 0.023
+2026-08-17 17:43:02,318 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:02] "POST /web/dataset/call_kw/res.users/action_get#res.users.action_get HTTP/1.1" 200 - 9 0.005 0.008
+2026-08-17 17:43:02,581 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:02] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 1 0.001 0.009
+2026-08-17 17:43:02,665 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:02] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 16 0.009 0.020
+2026-08-17 17:43:06,043 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:06] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 26 0.020 0.038
+2026-08-17 17:43:07,394 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:07] "POST /web/dataset/call_kw/res.users/web_save#res.users.web_save HTTP/1.1" 200 - 76 0.039 0.065
+2026-08-17 17:43:07,541 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:07] "POST /web/dataset/call_button/res.users/preference_save#res.users.preference_save HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:43:07,728 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:07] "GET /odoo/crm HTTP/1.1" 200 - 20 0.009 0.017
+2026-08-17 17:43:07,861 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:07] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.004
+2026-08-17 17:43:08,064 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/webclient/translations?hash=dc12d4f19c513ead64c062488dee462c4b25eb76&lang=en_US HTTP/1.1" 200 - 1 0.002 0.005
+2026-08-17 17:43:08,160 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "POST /web/dataset/call_kw/crm.lead/get_views#crm.lead.get_views HTTP/1.1" 200 - 3 0.005 0.033
+2026-08-17 17:43:08,174 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "POST /web/dataset/call_kw/crm.lead/read_progress_bar#crm.lead.read_progress_bar HTTP/1.1" 200 - 3 0.005 0.010
+2026-08-17 17:43:08,214 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "POST /web/dataset/call_kw/res.users/has_group#res.users.has_group HTTP/1.1" 200 - 1 0.004 0.009
+2026-08-17 17:43:08,222 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "POST /mail/data HTTP/1.1" 200 - 36 0.051 0.034
+2026-08-17 17:43:08,252 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "POST /web/dataset/call_kw/crm.lead/web_read_group#crm.lead.web_read_group HTTP/1.1" 200 - 25 0.021 0.031
+2026-08-17 17:43:08,381 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/15/avatar_128 HTTP/1.1" 304 - 6 0.004 0.008
+2026-08-17 17:43:08,488 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/11/avatar_128 HTTP/1.1" 304 - 6 0.007 0.013
+2026-08-17 17:43:08,495 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/10/avatar_128 HTTP/1.1" 304 - 6 0.005 0.009
+2026-08-17 17:43:08,537 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/9/avatar_128 HTTP/1.1" 304 - 6 0.005 0.010
+2026-08-17 17:43:08,547 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.003 0.006
+2026-08-17 17:43:08,584 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/3/avatar_128?unique=1786970587000 HTTP/1.1" 200 - 7 0.005 0.010
+2026-08-17 17:43:08,696 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.004 0.007
+2026-08-17 17:43:08,820 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.partner/12/avatar_128 HTTP/1.1" 304 - 6 0.007 0.010
+2026-08-17 17:43:08,823 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 200 - 8 0.009 0.011
+2026-08-17 17:43:08,857 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:08] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.002 0.005
+2026-08-17 17:43:09,182 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:09] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.008
+2026-08-17 17:43:10,580 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:10] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2026-08-17 17:43:12,797 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:12] "POST /web/dataset/call_kw/res.users/action_get#res.users.action_get HTTP/1.1" 200 - 9 0.008 0.015
+2026-08-17 17:43:13,120 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:13] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 1 0.001 0.007
+2026-08-17 17:43:13,137 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:13] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 16 0.012 0.011
+2026-08-17 17:43:16,701 22460 INFO demo werkzeug: 127.0.0.1 - - [17/Aug/2026 17:43:16] "POST /web/dataset/call_kw/crm.stage/read#crm.stage.read HTTP/1.1" 200 - 3 0.002 0.003
+2026-08-17 17:46:41,538 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 17:46:41,560 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.02s) 
+2026-08-17 17:56:00,081 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
+2026-08-17 17:56:00,113 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.03s) 

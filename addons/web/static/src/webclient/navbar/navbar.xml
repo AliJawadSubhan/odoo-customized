@@ -73,32 +73,9 @@
   </t>
 
   <t t-name="web.NavBar.AppsMenu">
-    <t t-if="this.ui.isSmall">
-      <a href="/odoo" class="o_menu_toggle border-0" t-att-class="{'hasImage': currentApp?.webIconData}" accesskey="h" t-ref="menuApps" t-on-click.prevent="_openAppMenuSidebar">
-        <t t-call="web.NavBar.AppsMenu.Sidebar"/>
-      </a>
-    </t>
-    <t t-else="">
-      <div t-if="!isScopedApp" class="o_navbar_apps_menu">
-        <Dropdown>
-          <button data-hotkey="h" title="Home Menu">
-            <i class="oi oi-apps" />
-          </button>
-          <t t-set-slot="content">
-            <DropdownItem
-              t-foreach="apps"
-              t-as="app"
-              t-key="app.id"
-              class="{ 'o_app': true, focus: menuService.getCurrentApp() === app }"
-              onSelected="() => this.onNavBarDropdownItemSelection(app)"
-              t-esc="app.name"
-              attrs="{ href: getMenuItemHref(app), 'data-menu-xmlid': app.xmlid, 'data-section': app.id }"
-            />
-          </t>
-        </Dropdown>
-      </div>
-      <div t-else="" class="mx-2"/>
-    </t>
+    <a href="/odoo" class="o_menu_toggle border-0" t-att-class="{'hasImage': currentApp?.webIconData}" accesskey="h" t-ref="menuApps" t-on-click.prevent="_openAppMenuSidebar">
+      <t t-call="web.NavBar.AppsMenu.Sidebar"/>
+    </a>
   </t>
 
   <t t-name="web.NavBar.AppsMenu.Sidebar">
