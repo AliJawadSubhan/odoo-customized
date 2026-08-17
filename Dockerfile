@@ -25,7 +25,11 @@ RUN pip install --no-cache-dir psycopg2-binary && \
 # Copy source
 COPY . .
 
-RUN chmod +x docker-entrypoint.sh
+RUN chmod +x docker-entrypoint.sh && \
+    useradd -m odoo && \
+    chown -R odoo:odoo /odoo
+
+USER odoo
 
 EXPOSE 8069
 
