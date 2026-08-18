@@ -6,7 +6,6 @@ exec python odoo-bin \
     --db_port "${PGPORT:-5432}" \
     --db_user "${PGUSER}" \
     --db_password "${PGPASSWORD}" \
-    --database "${PGDATABASE:-railway}" \
     --http-port "${PORT:-8069}" \
     --proxy-mode \
     --addons-path "addons" \
