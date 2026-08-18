@@ -1,12 +1,18 @@
 #!/bin/bash
 set -e
 
-exec python odoo-bin \
-    --db_host "${PGHOST}" \
-    --db_port "${PGPORT:-5432}" \
-    --db_user "${PGUSER}" \
-    --db_password "${PGPASSWORD}" \
+# Generate odoo.conf dynamically with the master password
+cat > /tmp/odoo.conf <<EOF
+[options]
+admin_passwd = ${ADMIN_PASSWD}
+db_host = ${PGHOST}
+db_port = ${PGPORT:-5432}
+db_user = ${PGUSER}
+db_password = ${PGPASSWORD}
+addons_path = addons
+EOF
+
+exec python odoo-bin -c /tmp/odoo.conf \
     --http-port "${PORT:-8069}" \
     --proxy-mode \
-    --addons-path "addons" \
     --without-demo all
