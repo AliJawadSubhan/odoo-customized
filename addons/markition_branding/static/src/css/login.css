@@ -1,6 +1,6 @@
 /* Markition Login Branding */
 
-/* Page background — forced light regardless of OS/browser dark mode */
+/* ── Page background ── */
 body.bg-100,
 html[data-bs-theme="dark"] body.bg-100,
 html[data-theme="dark"] body.bg-100 {
@@ -8,7 +8,7 @@ html[data-theme="dark"] body.bg-100 {
     min-height: 100vh;
 }
 
-/* Login card */
+/* ── Login card ── */
 .o_database_list {
     max-width: 360px !important;
     border-radius: 14px !important;
@@ -16,13 +16,43 @@ html[data-theme="dark"] body.bg-100 {
     background: #ffffff !important;
 }
 
-/* Logo area: tighten bottom border padding */
-.o_database_list .card-body .text-center.pb-3 {
-    padding-bottom: 1.25rem !important;
-    margin-bottom: 1.25rem !important;
+/* ── Logo replacement ──
+   Hide whatever company logo Odoo renders (placeholder or company setting)
+   and show the Markition logo as a background image on the same container. */
+.o_database_list .card-body img[src*="company_logo"],
+.o_database_list .card-body > div:first-child img,
+.oe_website_login_container img[src*="company_logo"] {
+    display: none !important;
 }
 
-/* Primary button — Markition gradient */
+.o_database_list .card-body > div:first-child::after,
+.oe_website_login_container > div:first-child::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 64px;
+    background: url('/markition_branding/static/img/markition_logo.svg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto 1rem;
+}
+
+/* Ensure the first div (logo area) has enough room */
+.o_database_list .card-body > div:first-child {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Remove "Powered by Odoo" link ──
+   Target by href content — works regardless of template structure. */
+a[href*="utm_source=db"],
+a[href*="utm_medium=auth"],
+a[href*="www.odoo.com"][target="_blank"] {
+    display: none !important;
+}
+
+/* ── Primary button — Markition gradient ── */
 .oe_login_buttons .btn-primary,
 .oe_login_form .btn-primary {
     background: linear-gradient(135deg, #06258B 0%, #080A3D 100%);
@@ -45,13 +75,13 @@ html[data-theme="dark"] body.bg-100 {
     outline: none;
 }
 
-/* Input fields */
+/* ── Input focus ring ── */
 .oe_login_form .form-control:focus {
     border-color: #06258B;
     box-shadow: 0 0 0 0.2rem rgba(6, 37, 139, 0.2);
 }
 
-/* "Manage Databases" link */
+/* ── Footer links ── */
 .o_database_list .card-body .text-center.small a {
     color: #06258B;
     text-decoration: none;
@@ -62,7 +92,7 @@ html[data-theme="dark"] body.bg-100 {
     text-decoration: underline;
 }
 
-/* Passkey / OAuth button links */
+/* ── Passkey / OAuth buttons ── */
 .o_auth_oauth_btn,
 .passkey_login_link {
     color: #06258B !important;

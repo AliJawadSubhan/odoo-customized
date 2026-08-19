@@ -8,21 +8,10 @@
         </xpath>
     </template>
 
-    <!-- Override login layout: replace logo + remove "Powered by Odoo" -->
-    <template id="login_layout" inherit_id="web.login_layout" name="Markition Login Layout">
-
-        <!-- Replace logo container div (border-bottom is unique to the logo section) -->
-        <xpath expr="//div[contains(@class,'border-bottom')]" position="replace">
-            <div class="text-center pb-3 border-bottom mb-4">
-                <img src="/markition_branding/static/img/markition_logo.svg"
-                     alt="Markition"
-                     style="max-height: 70px; max-width: 100%; width: auto;"/>
-            </div>
-        </xpath>
-
-        <!-- Remove "Powered by Odoo" link specifically -->
-        <xpath expr="//a[contains(@href,'utm_medium=auth')]" position="replace"/>
-
-    </template>
+    <!-- Login page logo and Powered-by branding are handled entirely via CSS (login.css).
+         XPath overrides on web.login_layout are not used here because the website module
+         (priority 20) replaces the inner structure of web.login_layout before our template
+         runs, making the original divs unreachable by XPath. CSS is applied after render
+         and works regardless of which modules have modified the template. -->
 
 </odoo>
