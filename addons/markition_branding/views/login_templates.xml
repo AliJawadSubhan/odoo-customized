@@ -20,14 +20,8 @@
             </div>
         </xpath>
 
-        <!-- Replace footer div: keep Manage Databases, remove Powered by Odoo -->
-        <xpath expr="//div[contains(@class,'border-top')]" position="replace">
-            <div class="text-center small mt-4 pt-3 border-top" t-if="not disable_footer">
-                <t t-if="not disable_database_manager">
-                    <a href="/web/database/manager">Manage Databases</a>
-                </t>
-            </div>
-        </xpath>
+        <!-- Remove "Powered by Odoo" link specifically -->
+        <xpath expr="//a[contains(@href,'utm_medium=auth')]" position="replace"/>
 
     </template>
 

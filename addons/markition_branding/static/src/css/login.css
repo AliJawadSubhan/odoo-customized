@@ -1,7 +1,9 @@
 /* Markition Login Branding */
 
-/* Page background */
-body.bg-100 {
+/* Page background — forced light regardless of OS/browser dark mode */
+body.bg-100,
+html[data-bs-theme="dark"] body.bg-100,
+html[data-theme="dark"] body.bg-100 {
     background: linear-gradient(160deg, #eef1f8 0%, #e4e9f5 100%) !important;
     min-height: 100vh;
 }
