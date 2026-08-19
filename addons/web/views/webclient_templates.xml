@@ -110,71 +110,18 @@
     <template id="web.login_layout" name="Login Layout">
         <t t-call="web.frontend_layout">
             <t t-set="html_data" t-value="{'style': 'height: 100%;'}"/>
-            <t t-set="body_classname" t-value="'markition-login-bg'"/>
+            <t t-set="body_classname" t-value="'bg-100'"/>
             <t t-set="no_header" t-value="True"/>
             <t t-set="no_footer" t-value="True"/>
-            <style>
-                body.markition-login-bg {
-                    background-color: #030A28;
-                    min-height: 100vh;
-                    margin: 0;
-                }
-                .markition-login-wrap {
-                    min-height: 100vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 2rem 1rem;
-                }
-                .markition-card {
-                    background: #ffffff;
-                    border-radius: 14px;
-                    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
-                    max-width: 420px;
-                    width: 100%;
-                }
-                .markition-card-logo {
-                    padding: 2.5rem 2rem 1.5rem;
-                    text-align: center;
-                    border-bottom: 1px solid #eef0f4;
-                }
-                .markition-card-logo img {
-                    max-height: 52px;
-                    width: auto;
-                }
-                .markition-card-body {
-                    padding: 1.75rem 2rem 2rem;
-                }
-                .markition-card .btn-primary {
-                    background-color: #030A28 !important;
-                    border-color: #030A28 !important;
-                    border-radius: 8px;
-                }
-                .markition-card .btn-primary:hover {
-                    background-color: #06258B !important;
-                    border-color: #06258B !important;
-                }
-                .markition-card .form-control {
-                    border-radius: 8px;
-                }
-                .markition-card a { color: #06258B; }
-                .markition-card-footer {
-                    text-align: center;
-                    font-size: 0.78rem;
-                    color: #8a92a6;
-                    margin-top: 1.5rem;
-                    padding-top: 1rem;
-                    border-top: 1px solid #eef0f4;
-                }
-            </style>
-            <div class="markition-login-wrap">
-                <div t-attf-class="markition-card {{login_card_classes or ''}} o_database_list">
-                    <div class="markition-card-logo">
-                        <img src="/web/static/img/markition_logo.svg" alt="Markition"/>
-                    </div>
-                    <div class="markition-card-body">
+
+            <div class="container py-5">
+                <div t-attf-class="card border-0 mx-auto bg-100 {{login_card_classes}} o_database_list" style="max-width: 300px;">
+                    <div class="card-body">
+                        <div class="text-center pb-3 border-bottom mb-4">
+                            <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}" alt="Logo" style="max-height:120px; max-width: 100%; width:auto"/>
+                        </div>
                         <t t-out="0"/>
-                        <div class="markition-card-footer" t-if="not disable_footer">
+                        <div class="text-center small mt-4 pt-3 border-top" t-if="not disable_footer">
                             <t t-if="not disable_database_manager">
                                 <a class="border-end pe-2 me-1" href="/web/database/manager">Manage Databases</a>
                             </t>
