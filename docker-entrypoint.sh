@@ -13,6 +13,8 @@ addons_path = addons
 EOF
 
 exec python odoo-bin -c /tmp/odoo.conf \
+    -d odoo \
+    -u markition_branding \
     --http-port "${PORT:-8069}" \
     --proxy-mode \
     --without-demo all

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <!-- Override page title -->
+    <template id="markition_web_layout" inherit_id="web.layout" name="Markition Web Layout">
+        <xpath expr="//title" position="replace">
+            <title t-esc="title or 'ERP Markition'"/>
+        </xpath>
+    </template>
+
     <!-- Override login layout: replace logo + remove "Powered by Odoo" -->
     <template id="login_layout" inherit_id="web.login_layout" name="Markition Login Layout">
 
