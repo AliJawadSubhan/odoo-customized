@@ -3,7 +3,7 @@ name: Deploy to AWS ECS
 on:
   push:
     branches:
-      - main
+      - 19.0
 
 permissions:
   id-token: write   # required for OIDC token exchange
