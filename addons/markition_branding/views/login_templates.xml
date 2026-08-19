@@ -4,15 +4,23 @@
     <!-- Override login layout: replace logo + remove "Powered by Odoo" -->
     <template id="login_layout" inherit_id="web.login_layout" name="Markition Login Layout">
 
-        <!-- Replace company logo with Markition logo -->
-        <xpath expr="//img[@alt='Logo']" position="replace">
-            <img src="/markition_branding/static/img/markition_logo.svg"
-                 alt="Markition"
-                 style="max-height: 70px; max-width: 100%; width: auto;"/>
+        <!-- Replace logo container div (border-bottom is unique to the logo section) -->
+        <xpath expr="//div[contains(@class,'border-bottom')]" position="replace">
+            <div class="text-center pb-3 border-bottom mb-4">
+                <img src="/markition_branding/static/img/markition_logo.svg"
+                     alt="Markition"
+                     style="max-height: 70px; max-width: 100%; width: auto;"/>
+            </div>
         </xpath>
 
-        <!-- Remove "Powered by Odoo" link, keep "Manage Databases" -->
-        <xpath expr="//a[contains(@href, 'utm_source=db')]" position="replace"/>
+        <!-- Replace footer div: keep Manage Databases, remove Powered by Odoo -->
+        <xpath expr="//div[contains(@class,'border-top')]" position="replace">
+            <div class="text-center small mt-4 pt-3 border-top" t-if="not disable_footer">
+                <t t-if="not disable_database_manager">
+                    <a href="/web/database/manager">Manage Databases</a>
+                </t>
+            </div>
+        </xpath>
 
     </template>
 
