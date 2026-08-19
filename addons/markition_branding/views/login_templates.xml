@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Override login layout: replace logo + remove "Powered by Odoo" -->
+    <template id="login_layout" inherit_id="web.login_layout" name="Markition Login Layout">
+
+        <!-- Replace company logo with Markition logo -->
+        <xpath expr="//img[@alt='Logo']" position="replace">
+            <img src="/markition_branding/static/img/markition_logo.svg"
+                 alt="Markition"
+                 style="max-height: 70px; max-width: 100%; width: auto;"/>
+        </xpath>
+
+        <!-- Remove "Powered by Odoo" link, keep "Manage Databases" -->
+        <xpath expr="//a[contains(@href, 'utm_source=db')]" position="replace"/>
+
+    </template>
+
+</odoo>

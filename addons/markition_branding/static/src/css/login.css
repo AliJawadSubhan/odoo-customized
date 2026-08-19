@@ -1,0 +1,67 @@
+/* Markition Login Branding */
+
+/* Page background */
+body.bg-100 {
+    background: linear-gradient(160deg, #eef1f8 0%, #e4e9f5 100%) !important;
+    min-height: 100vh;
+}
+
+/* Login card */
+.o_database_list {
+    max-width: 360px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 32px rgba(8, 10, 61, 0.13) !important;
+    background: #ffffff !important;
+}
+
+/* Logo area: tighten bottom border padding */
+.o_database_list .card-body .text-center.pb-3 {
+    padding-bottom: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+/* Primary button — Markition gradient */
+.oe_login_buttons .btn-primary,
+.oe_login_form .btn-primary {
+    background: linear-gradient(135deg, #06258B 0%, #080A3D 100%);
+    border-color: #06258B;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 8px;
+    padding: 0.55rem 1rem;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oe_login_buttons .btn-primary:hover,
+.oe_login_form .btn-primary:hover,
+.oe_login_buttons .btn-primary:focus,
+.oe_login_form .btn-primary:focus {
+    background: linear-gradient(135deg, #0830a5 0%, #0d1254 100%);
+    border-color: #0830a5;
+    box-shadow: 0 4px 14px rgba(6, 37, 139, 0.35);
+    outline: none;
+}
+
+/* Input fields */
+.oe_login_form .form-control:focus {
+    border-color: #06258B;
+    box-shadow: 0 0 0 0.2rem rgba(6, 37, 139, 0.2);
+}
+
+/* "Manage Databases" link */
+.o_database_list .card-body .text-center.small a {
+    color: #06258B;
+    text-decoration: none;
+}
+
+.o_database_list .card-body .text-center.small a:hover {
+    color: #080A3D;
+    text-decoration: underline;
+}
+
+/* Passkey / OAuth button links */
+.o_auth_oauth_btn,
+.passkey_login_link {
+    color: #06258B !important;
+}
