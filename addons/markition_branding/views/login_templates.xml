@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Override page title -->
+    <!-- Override page title and favicon -->
     <template id="markition_web_layout" inherit_id="web.layout" name="Markition Web Layout">
         <xpath expr="//title" position="replace">
             <title t-esc="title or 'ERP Markition'"/>
+        </xpath>
+        <xpath expr="//link[@rel='shortcut icon']" position="replace">
+            <link type="image/svg+xml" rel="shortcut icon" href="/markition_branding/static/img/fav-icon-white.svg"/>
         </xpath>
     </template>
 
