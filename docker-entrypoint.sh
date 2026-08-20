@@ -11,6 +11,7 @@ db_user = ${PGUSER}
 db_password = ${PGPASSWORD}
 addons_path = addons
 proxy_mode = True
+dbfilter = .*
 EOF
 
 exec python odoo-bin -c /tmp/odoo.conf \
