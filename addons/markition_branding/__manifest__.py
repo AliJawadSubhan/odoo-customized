@@ -1,15 +1,19 @@
 {
     'name': 'Markition Branding',
-    'version': '19.0.1.0.0',
-    'summary': 'Custom login page branding for Markition',
+    'version': '19.0.2.0.0',
+    'summary': 'Platform-wide de-branding and Markition identity',
     'author': 'Markition',
-    'depends': ['web'],
+    'depends': ['web', 'portal', 'mail', 'base_setup'],
     'data': [
         'views/login_templates.xml',
+        'views/portal_debrand.xml',
     ],
     'assets': {
         'web.assets_frontend': [
             'markition_branding/static/src/css/login.css',
+        ],
+        'web.assets_backend': [
+            'markition_branding/static/src/js/user_menu_debrand.js',
         ],
     },
     'installable': True,

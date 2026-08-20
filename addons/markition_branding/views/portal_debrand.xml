@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hide "Powered by Odoo" in portal/website footer (web.brand_promotion) -->
+    <template id="brand_promotion_debrand" inherit_id="web.brand_promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+
+    <!-- Hide "Powered by Odoo" in portal record sidebar.
+         Targets the specific div by all three classes to avoid matching the
+         unrelated d-none dividers also present in this template. -->
+    <template id="portal_record_sidebar_debrand" inherit_id="portal.portal_record_sidebar">
+        <xpath expr="//div[hasclass('d-none') and hasclass('d-lg-block') and hasclass('mt-5')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+</odoo>
