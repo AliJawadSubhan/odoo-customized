@@ -14,5 +14,7 @@ proxy_mode = True
 EOF
 
 exec python odoo-bin -c /tmp/odoo.conf \
+    -u markition_branding \
     --http-port "${PORT:-8069}" \
+    --proxy-mode \
     --without-demo all
