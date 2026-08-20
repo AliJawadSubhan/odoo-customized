@@ -10,11 +10,9 @@ db_port = ${PGPORT:-5432}
 db_user = ${PGUSER}
 db_password = ${PGPASSWORD}
 addons_path = addons
+proxy_mode = True
 EOF
 
 exec python odoo-bin -c /tmp/odoo.conf \
-    -d odoo \
-    -u markition_branding \
     --http-port "${PORT:-8069}" \
-    --proxy-mode \
     --without-demo all
