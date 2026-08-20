@@ -1,6 +1,6 @@
 from . import models
 from odoo.addons.base.models.assetsbundle import JavascriptAsset
-from odoo.tools import transpile_javascript
+from odoo.tools.js_transpiler import transpile_javascript
 import re
 import odoo
 from .models.home  import base_sorturl
@@ -53,7 +53,7 @@ def _uninstall_cleanup(env):
     def routing_map(self, key=None):
         _logger.info("Generating routing map for key %s", str(key))
         registry = Registry(threading.current_thread().dbname)
-        installed = registry._init_modules.union(odoo.conf.server_wide_modules)
+        installed = registry._init_modules.union(odoo.tools.config['server_wide_modules'])
         mods = sorted(installed)
         routing_map = werkzeug.routing.Map(
             strict_slashes=False, converters=self._get_converters())
