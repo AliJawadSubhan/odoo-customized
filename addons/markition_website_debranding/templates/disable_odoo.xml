@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Blank the "Powered by Odoo" promotional text in website page footers.
+         Inherits web.brand_promotion_message (the message-level template) so
+         the wrapper div rendered by web.brand_promotion still exists but is
+         visually empty. Our markition_branding addon hides the wrapper div on
+         the portal/login side; this handles the website-module footer. -->
+    <template
+        id="layout_footer_copyright"
+        inherit_id="web.brand_promotion_message"
+        customize_show="True"
+        name="Remove Odoo Promotional Link"
+        priority="999"
+    >
+        <xpath expr="//t[@t-set='final_message']" position="replace">
+            <t t-set="final_message" />
+        </xpath>
+        <xpath expr="//t[@t-out]" position="replace">
+            <t t-out="final_message" />
+        </xpath>
+    </template>
+</odoo>
