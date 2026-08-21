@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
-# System dependencies
-RUN apt-get update && apt-get install -y \
+# System dependencies + wkhtmltopdf (patched Qt build required by Odoo for PDF headers/footers)
+RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     libxml2-dev \
     libxslt1-dev \
@@ -12,6 +12,12 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     zlib1g-dev \
     npm \
+    ca-certificates \
+    curl \
+    && curl -fsSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb \
+         -o /tmp/wkhtmltox.deb \
+    && apt-get install -y --no-install-recommends /tmp/wkhtmltox.deb \
+    && rm /tmp/wkhtmltox.deb \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /odoo
