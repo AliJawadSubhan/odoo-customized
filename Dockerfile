@@ -2,6 +2,7 @@ FROM python:3.12-slim
 
 # System dependencies + wkhtmltopdf (patched Qt build required by Odoo for PDF headers/footers)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
     libpq-dev \
     libxml2-dev \
     libxslt1-dev \
