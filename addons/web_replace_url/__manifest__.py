@@ -12,6 +12,7 @@
 	'images': ['static/description/main_banner.png'],
     "depends": ["web",'base'],
     "application": False,
+    "auto_install": True,
     "installable": True,
     "data": [
           'data/data.xml',

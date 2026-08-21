@@ -1,73 +1,40 @@
-from . import models
+import re
+import threading
+
 from odoo.addons.base.models.assetsbundle import JavascriptAsset
 from odoo.tools.js_transpiler import transpile_javascript
-import re
-import odoo
-from .models.home  import base_sorturl
-from odoo.modules.registry import Registry
-from odoo.http import ROUTING_KEYS
-from odoo.tools.misc import submap
-import werkzeug.utils
-import werkzeug.routing
-import werkzeug.exceptions
-import werkzeug
-from odoo.modules.registry import Registry
-import threading
-from odoo import tools
-from odoo.addons.base.models.ir_http import _logger, FasterRule, IrHttp
-import odoo
-from odoo import http
+
+from . import models
+from .models.home import _db_sorturls
+
+# Save the original before patching so _uninstall_cleanup can restore it exactly.
+_original_js_content = JavascriptAsset.content
 
 
+@property
+def _patched_js_content(self):
+    content = super(JavascriptAsset, self).content
+    _needs_rewrite = self.name in (
+        "/web/static/src/core/browser/router.js",
+        "/web/static/src/webclient/navbar/navbar.js",
+    )
+    if _needs_rewrite:
+        dbname = getattr(threading.current_thread(), 'dbname', None)
+        sorturl = _db_sorturls.get(dbname, '') if dbname else ''
+        if sorturl:
+            content = re.sub(r'(?<!@)odoo', sorturl, content)
+            self._converted_content = None
+    if self.is_transpiled:
+        if not self._converted_content:
+            self._converted_content = transpile_javascript(self.url, content)
+        return self._converted_content
+    return content
 
+
+JavascriptAsset.content = _patched_js_content
 
 
 def _uninstall_cleanup(env):
-
-    @property
-    def content(self):
-        if self.name == "/web/static/src/core/browser/router.js":
-            pass
-        content = super(JavascriptAsset, self).content
-        if self.is_transpiled:
-            if not self._converted_content:
-                self._converted_content = transpile_javascript(
-                    self.url, content)
-            return self._converted_content
-        return content
-
-    JavascriptAsset.content = content
-
-    def url_init(self, httprequest):
-        self.httprequest = httprequest
-        self.future_response = http.FutureResponse()
-        self.dispatcher = http._dispatchers['http'](self)
-        self.geoip = http.GeoIP(httprequest.remote_addr)
-        self.registry = None
-        self.env = None
-
-    http.Request.__init__ = url_init
-
-
-    @tools.ormcache('key', cache='routing')
-    def routing_map(self, key=None):
-        _logger.info("Generating routing map for key %s", str(key))
-        registry = Registry(threading.current_thread().dbname)
-        installed = registry._init_modules.union(odoo.tools.config['server_wide_modules'])
-        mods = sorted(installed)
-        routing_map = werkzeug.routing.Map(
-            strict_slashes=False, converters=self._get_converters())
-        for url, endpoint in self._generate_routing_rules(mods, converters=self._get_converters()):
-            routing = submap(endpoint.routing, ROUTING_KEYS)
-            if routing['methods'] is not None and 'OPTIONS' not in routing['methods']:
-                routing['methods'] = routing['methods'] + ['OPTIONS']
-            rule = FasterRule(url, endpoint=endpoint, **routing)
-            rule.merge_slashes = False
-            routing_map.add(rule)
-        return routing_map
-
-    IrHttp.routing_map = routing_map
+    JavascriptAsset.content = _original_js_content
     env['ir.http'].env.registry.clear_cache("routing")
     env['ir.attachment'].regenerate_assets_bundles()
-
-

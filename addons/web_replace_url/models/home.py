@@ -1,100 +1,63 @@
-import json
-import logging
-import psycopg2
 import threading
-from odoo import tools
-from odoo.addons.base.models.ir_http import _logger, FasterRule, IrHttp
-import odoo
-from odoo import http
+import werkzeug.routing
+
+from odoo import models, tools
+from odoo.addons.base.models.ir_http import _logger, FasterRule
 from odoo.http import ROUTING_KEYS
 from odoo.tools.misc import submap
-import odoo.exceptions
-import odoo.modules.registry
-from odoo import http
-from odoo.exceptions import AccessError
-from odoo.http import request
-from odoo.service import security
-from odoo.tools.translate import _
 from odoo.modules.registry import Registry
-from odoo import api, fields, models, _
-# transpile_javascript is imported locally where needed (moved in 19.0)
-from odoo.addons.base.models import ir_config_parameter
-from odoo.addons.base.models.assetsbundle import JavascriptAsset
-import werkzeug.utils
-import werkzeug.routing
-import werkzeug.exceptions
-import werkzeug
-import re
-base_sorturl=['']
+import odoo
+
+# Per-database sorturl cache: {dbname: sorturl_string}
+# Written by routing_map() when a database's routing map is built.
+# Read by JavascriptAsset.content (see __init__.py) for JS rewriting.
+# Keyed by database name — no cross-database contamination.
+_db_sorturls = {}
+
 
 class IrConfigParameter(models.Model):
     _inherit = "ir.config_parameter"
 
     def write(self, vals):
-        data = super(IrConfigParameter, self).write(vals)
-        if data and self.key == 'web.base.sorturl':
+        result = super().write(vals)
+        if result and self.key == 'web.base.sorturl':
             self.env['ir.http'].env.registry.clear_cache("routing")
             self.env['ir.attachment'].regenerate_assets_bundles()
             return {'type': 'ir.actions.client', 'tag': 'soft_reload'}
-        return data
+        return result
 
 
+class IrHttp(models.AbstractModel):
+    _inherit = 'ir.http'
 
+    @tools.ormcache('key', cache='routing')
+    def routing_map(self, key=None):
+        config_parameter = self.env['ir.config_parameter']
+        sorturl = config_parameter.sudo().get_param("web.base.sorturl", "")
 
-@property
-def content(self):
-    content = super(JavascriptAsset, self).content
-    _needs_rewrite = self.name in (
-        "/web/static/src/core/browser/router.js",
-        "/web/static/src/webclient/navbar/navbar.js",
-    )
-    if _needs_rewrite and base_sorturl[0]:
-        content = re.sub(r'(?<!@)odoo', base_sorturl[0], content)
-        # Invalidate transpile cache so rewritten content is used
-        self._converted_content = None
-    if self.is_transpiled:
-        if not self._converted_content:
-            from odoo.tools.js_transpiler import transpile_javascript  # 19.0 path
-            self._converted_content = transpile_javascript(self.url, content)
-        return self._converted_content
-    return content
+        dbname = threading.current_thread().dbname
+        _db_sorturls[dbname] = sorturl
 
-JavascriptAsset.content = content
-
-def url_init(self, httprequest):
-    if "odoo" in httprequest.path and "/web/static" not in  httprequest.path:
-        httprequest.path = httprequest.path.replace(
-            "odoo", base_sorturl[0])
-    self.httprequest = httprequest
-    self.future_response = http.FutureResponse()
-    self.dispatcher = http._dispatchers['http'](self)
-    self.geoip = http.GeoIP(httprequest.remote_addr)
-    self.registry = None
-    self.env = None
-
-http.Request.__init__ = url_init
-
-@tools.ormcache('key', cache='routing')
-def routing_map(self, key=None):
-    config_parameter = self.env['ir.config_parameter']
-    base_sorturl[0] = config_parameter.sudo(
-    ).get_param("web.base.sorturl", "")
-    _logger.info("Generating routing map for key %s", str(key))
-    registry = Registry(threading.current_thread().dbname)
-    installed = registry._init_modules.union(
-        odoo.tools.config['server_wide_modules'])
-    mods = sorted(installed)
-    routing_map = werkzeug.routing.Map(
-        strict_slashes=False, converters=self._get_converters())
-    for url, endpoint in self._generate_routing_rules(mods, converters=self._get_converters()):
-        if 'odoo' in url:
-            url = url.replace('odoo', base_sorturl[0])
-        routing = submap(endpoint.routing, ROUTING_KEYS)
-        if routing['methods'] is not None and 'OPTIONS' not in routing['methods']:
-            routing['methods'] = routing['methods'] + ['OPTIONS']
-        rule = FasterRule(url, endpoint=endpoint, **routing)
-        rule.merge_slashes = False
-        routing_map.add(rule)
-    return routing_map
-
-IrHttp.routing_map = routing_map
+        _logger.info("Generating routing map for key %s", str(key))
+        registry = Registry(dbname)
+        installed = registry._init_modules.union(
+            odoo.tools.config['server_wide_modules'])
+        mods = sorted(installed)
+        routing_map = werkzeug.routing.Map(
+            strict_slashes=False, converters=self._get_converters())
+        for url, endpoint in self._generate_routing_rules(
+                mods, converters=self._get_converters()):
+            routing = submap(endpoint.routing, ROUTING_KEYS)
+            if routing['methods'] is not None and 'OPTIONS' not in routing['methods']:
+                routing['methods'] = routing['methods'] + ['OPTIONS']
+            # Always register the original route (e.g. /odoo, /odoo/<path>)
+            rule = FasterRule(url, endpoint=endpoint, **routing)
+            rule.merge_slashes = False
+            routing_map.add(rule)
+            # Also register the custom URL alias (e.g. /markition-erp)
+            if sorturl and 'odoo' in url:
+                custom_url = url.replace('odoo', sorturl)
+                custom_rule = FasterRule(custom_url, endpoint=endpoint, **routing)
+                custom_rule.merge_slashes = False
+                routing_map.add(custom_rule)
+        return routing_map
