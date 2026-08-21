@@ -11,6 +11,13 @@
         </xpath>
     </template>
 
+    <!-- Hide "Powered by Odoo" promotion block site-wide (defined in web, always present) -->
+    <template id="brand_promotion_debrand" inherit_id="web.brand_promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+
     <!-- Login page logo and Powered-by branding are handled entirely via CSS (login.css).
          XPath overrides on web.login_layout are not used here because the website module
          (priority 20) replaces the inner structure of web.login_layout before our template
