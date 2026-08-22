@@ -2722,3 +2722,21 @@ File: "C:\Users\SK\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 
 2026-08-17 18:06:10,966 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.07s) 
 2026-08-17 18:16:21,591 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) starting 
 2026-08-17 18:16:21,654 22460 INFO demo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (15) fully done (#loop 1; done 0; remaining 0; duration 0.06s) 
+2026-08-22 12:12:59,152 10036 WARNING ? odoo.tools.config: option addons_path, no such directory 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\custom_addons', skipped 
+2026-08-22 12:12:59,153 10036 WARNING ? odoo.tools.config: option addons_path, no such directory 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\custom_addons', skipped 
+2026-08-22 12:12:59,154 10036 INFO ? odoo: Odoo version 19.0 
+2026-08-22 12:12:59,155 10036 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-22 12:12:59,155 10036 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-22 12:12:59,155 10036 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-22 12:13:01,132 10036 INFO ? odoo.service.server: Initiating shutdown 
+2026-08-22 12:13:01,133 10036 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-08-22 12:13:02,521 10036 INFO odoo odoo.sql_db: Connection to the database failed 
+2026-08-22 12:13:09,517 15164 WARNING ? odoo.tools.config: option addons_path, no such directory 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\custom_addons', skipped 
+2026-08-22 12:13:09,517 15164 WARNING ? odoo.tools.config: option addons_path, no such directory 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\custom_addons', skipped 
+2026-08-22 12:13:09,517 15164 INFO ? odoo: Odoo version 19.0 
+2026-08-22 12:13:09,517 15164 INFO ? odoo: Using configuration file at d:\ali jawad\projects\odoo-latest\odoo\odoo.conf 
+2026-08-22 12:13:09,517 15164 INFO ? odoo: addons paths: _NamespacePath(['D:\\Ali Jawad\\Projects\\odoo-latest\\odoo\\odoo\\addons', 'C:\\Users\\SK\\AppData\\Local\\OpenERP S.A.\\Odoo\\addons\\19.0', 'd:\\ali jawad\\projects\\odoo-latest\\odoo\\addons']) 
+2026-08-22 12:13:09,517 15164 INFO ? odoo: database: odoo@localhost:5432 
+2026-08-22 12:13:09,855 15164 INFO ? odoo.service.server: Initiating shutdown 
+2026-08-22 12:13:09,856 15164 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-08-22 12:13:09,898 15164 INFO odoo odoo.sql_db: Connection to the database failed 
