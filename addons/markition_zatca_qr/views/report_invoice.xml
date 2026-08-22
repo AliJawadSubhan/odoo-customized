@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!--
-        Patch l10n_sa.l10n_sa_report_invoice_document to render the ZATCA QR code.
+        Patches l10n_sa.l10n_sa_report_invoice_document (primary template compiled into DB).
 
-        The l10n_sa module may be installed from an older snapshot that predates the
-        QR rendering block, so ir_ui_view has no entry referencing l10n_sa_qr_code_str.
-        This view adds the block explicitly.
+        Root cause: the production DB was loaded from an older snapshot of l10n_sa where the
+        QR img tag used `o.l10n_sa_is_legal` (plain field access, no underscore, no parens).
+        That attribute does not exist on account.move — QWeb treats the missing reference as
+        False, so the QR block never renders even when l10n_sa_qr_code_str is populated.
 
-        Insertion point: after div#qrcode (the bank-payment QR block from the base
-        account.report_invoice_document template, baked into the SA primary template).
-        div#qrcode lives inside a t-else, so this sibling div renders unconditionally
-        and its own t-if controls visibility — mirroring what l10n_sa would do when
-        its view is current.
+        The current on-disk source uses `o._l10n_sa_is_legal()` (underscore method call), but
+        the DB stores the compiled arch from the older version. We cannot change the DB's
+        stored arch directly without touching the core module, so we override it here via
+        inheritance: replace only the t-if attribute on the img so it gates directly on the
+        QR field, which is what _l10n_sa_is_legal() checks anyway.
     -->
     <template id="markition_zatca_qr_on_invoice"
-              name="Markition: ZATCA QR on Saudi Invoice"
+              name="Markition: Fix ZATCA QR t-if on Saudi Invoice"
               inherit_id="l10n_sa.l10n_sa_report_invoice_document">
 
-        <xpath expr="//div[@id='qrcode']" position="after">
-            <div t-if="o.l10n_sa_qr_code_str"
-                 id="markition_zatca_qr_code"
-                 class="d-flex mt-2 avoid-page-break-inside">
-                <p class="mb-0 me-3">
-                    <img class="d-block"
-                         t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', quote_plus(o.l10n_sa_qr_code_str), 200, 200)"/>
-                </p>
-            </div>
+        <xpath expr="//div[@id='l10n_sa_qr_code']//img" position="attributes">
+            <attribute name="t-if">o.l10n_sa_qr_code_str</attribute>
         </xpath>
 
     </template>
